@@ -1,0 +1,16 @@
+.row.full {
+  max-width:100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 90%;
+}
