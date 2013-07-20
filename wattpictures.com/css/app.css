@@ -12,5 +12,146 @@
 
 .logo {
   position: absolute;
-  top: 90%;
+  bottom: -10px;
+  left:5%;
+}
+
+.top-bar .name h1 a {
+	width:100%; }
+
+.menu-desktop {
+  position: fixed;
+  top:40px;
+  left:5%;
+  width:350px;
+  height:250px;
+  z-index:999;
+}
+
+.menu-desktop h1 {
+  font-family: 'Lato', sans-serif;
+  font-size:16px;
+  color:#000;
+  font-weight:400;
+  letter-spacing:2px;
+  text-align:left;
+  width:auto;
+  margin:0px;
+  border:none;
+}
+
+.menu-desktop ul {
+  margin:20px 0px 0px 0px;
+  padding:20px 0px 0px 0px;
+  background:url(../img/bg-menu-desktop.gif) top left no-repeat;
+}
+
+.menu-desktop ul li {
+  font-family: 'GFS Didot', serif;
+  font-size:20px;
+  color:#000;
+  list-style-type:none;
+  letter-spacing:2px;
+  line-height:1.2em;
+}
+
+.menu-desktop ul li a {
+  color:#000;
+}
+
+.menu-desktop ul li a:hover {
+  text-decoration:underline;
+}
+
+ol.orbit-bullets {
+  display: table;
+  text-align: center;
+  margin-top:20px;
+}
+
+.orbit-bullets li.active {
+  background: #000;
+}
+.orbit-bullets li {
+  width: 10px;
+  height: 10px;
+  border: solid 1px #000;
+  background:#fff;
+}
+
+h1 {
+  display:block;
+  width:150px;
+  padding:0px 0px 0px 0px;
+  margin:0 auto;
+  margin-bottom:30px;
+  margin-top:30px;
+  text-align:center;
+  font-family: 'GFS Didot', serif;
+  font-size:26px;
+  color:#000;
+  border-bottom:3px solid #000;
+  font-weight:100;
+}
+
+p {
+  text-align:justify;
+  font-size:13px;
+}
+
+p span {
+	font-size:11px;
+	text-align:center;
+	display:block;
+	margin-top:10px;
+}
+
+
+footer {
+	background:#EEEEEE;
+	border-top:1px solid #000;
+	padding:20px 0px 40px 0px;
+}
+
+footer h1 {
+  font-family: 'Lato', sans-serif;
+  font-size:16px;
+  color:#000;
+  font-weight:400;
+  letter-spacing:2px;
+  text-align:left;
+  width:auto;
+  margin:0px;
+  border:none;
+}
+
+footer ul {
+	margin:20px 0px 0px 0px;
+	padding:0px;
+}
+
+footer ul li {
+	float:left;
+	width:30px;
+	height:25px;
+	display:block;
+	list-style-type:none;
+	margin:0px 10px 0px 0px;
+}
+
+footer ul li a{
+	width:30px;
+	height:25px;
+	display:block;
+	text-indent:-99999px;
+}
+
+footer ul li a.instagram{
+	background:url(../img/ico-instagram.gif) top left no-repeat;
+}
+footer ul li a.facebook{
+	background:url(../img/ico-facebook.gif) top left no-repeat;
+}
+footer ul li a.twitter{
+	background:url(../img/ico-twitter.gif) top left no-repeat;
 }
