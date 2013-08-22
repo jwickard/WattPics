@@ -17,10 +17,10 @@
   <script src="http://static.codestarconstellation.com/foundation-4.2.2/js/vendor/custom.modernizr.js"></script>
 
 </head>
-<body>
+<body  class="animated fadeInUp">
   
   <!-- Header -->	
-  <header class="animated fadeInUp">
+  <header>
     
   <!--<div class="row collapse">
   	<div class="large-12 columns">
@@ -71,7 +71,7 @@
       </div>
       
       <!--<div class="preloader"></div>-->
-      <ul data-orbit data-options="slide_number:false; navigation_arrows:false;">
+      <ul data-orbit data-options="slide_number:false; navigation_arrows:false; animation: 'fade'; ">
           <li><img src="img/slider.jpg" class="hero"/></li>
     	  <li><img src="img/slider.jpg" class="hero"/></li>
 	      <li><img src="img/slider.jpg" class="hero"/></li>
@@ -89,16 +89,22 @@
   <div class="row">
     <div class="large-8 columns large-centered">
       	
-        <article>
-        <h1 id="about">About</h1>
-        <p><strong>Watt Pictures: Real Entertainment.</strong></p>
+      <article>
+        <h1 id="about">Watt Pictures: Real Entertainment.</h1>
+       
         <p>Watt Pictures is an edgy, independent production company based in New York City. We create prime time content for major US broadcasters and international brands. We believe in the supremacy of story and the capacity of human character, and that’s why, for years, we we have turned ordinary life into extraordinary television. And whether you’re a client, an employee, on-screen talent, or a business partner, those working with Watt Pictures benefit from our passion, creativity, and personal attention. We love what we do. We care about it. We’re good at it... and we’re going to stay that way. </p>
-		<p><strong>Submissions Welcome</strong></p>
-		<p>If you have an idea for a television show, or you know of a unique character or family business, feel free to contact us at: casting@wattpictures.com </p>
-		<p>Representation: the Creative Artists Agency.</p>
-		<p><strong>The Executive Producer</strong></p>
-		<p>Since 2005, Jason Watt has created, directed, and produced a range of factual and lifestyle programming for networks ranging from HGTV to MTV, and everywhere in between. His experience includes nearly every aspect of television production. He is a sought-after show runner and directed who has launched new series for both emerging and established media outlets. He holds an MA in English Literature from Hollins University and an MFA in Creative Writing from the University of Illinois, where he was one of the founding editors of Ninth Letter Magazine.</p>
-		<p><em>We live for stories</em>.<br></p>
+		
+    		<h1>Submissions Welcome</h1>
+    		<p>If you have an idea for a television show, or you know of a unique character or family business, feel free to contact us at: casting@wattpictures.com </p>
+    		
+    		
+    		<p>Representation: the Creative Artists Agency.</p>
+    		
+    		
+    		<h1>The Executive Producer</h1>
+    		<p>Since 2005, Jason Watt has created, directed, 
+    		  and produced a range of factual and lifestyle programming for networks ranging from HGTV to MTV, and everywhere in between. His experience includes nearly every aspect of television production. He is a sought-after show runner and directed who has launched new series for both emerging and established media outlets. He holds an MA in English Literature from Hollins University and an MFA in Creative Writing from the University of Illinois, where he was one of the founding editors of Ninth Letter Magazine.</p>
+    		<h1><em>We live for stories</em>.<br></h1>
 		</article>
 
     </div>
@@ -117,12 +123,12 @@
   
   
   <div class="row">
-  	<div class="large-10 columns large-centered">
+  	<div class="large-8 columns large-centered">
     	
         <article>
         
         <div class="row">
-  `		<h1 id="credits">Credits</h1>
+  		<h1 id="credits">Credits</h1>
     	
         <div class="large-5 columns credits">
             <p><strong>COMMERCIAL: Israel Ministry of Tourism / Bodden Partners - $10 million campaign</strong><br />
@@ -250,11 +256,11 @@
   
   
   <div class="row">
-  	<div class="large-2 columns large-centered">
+  	<div class="large-8 columns large-centered">
     
   		<h1 id="contact">Contact</h1>
     	
-        <p>123 Main Street<br>
+        <p class="centered">123 Main Street<br>
         Brooklyn, NY 11221<br>
         T 212-477-8711<br>
         info@wattpictures.com</p>
@@ -306,8 +312,16 @@
 	$(document).ready(function() {
 	  setTimeout(function(){
 		  $('#menu').addClass('visible animated fadeInUp');
+
 	  },500)
+	   setTimeout(function(){
+      $('.logo').addClass('visible animated fadeInUp');
+
+    },250)
+	       
   	});
+  	
+ 
   
   </script>
 </body>
