@@ -20,9 +20,9 @@
 <body>
   
   <!-- Header -->	
-  <header>
+  <header class="animated fadeInUp">
     
-  <div class="row collapse">
+  <!--<div class="row collapse">
   	<div class="large-12 columns">
     	
         <nav class="top-bar show-for-small">
@@ -50,18 +50,18 @@
           </nav>
           
     </div>
-  </div>
+  </div>-->
   
   <div class="row collapse full relative">
     <div class="large-12 columns">
       
-      <div class="menu-desktop hide-for-small">
+      <div class="menu-desktop" id="menu">
       		<h1>WATT PICTURES<br>TELEVISION PRODUCTION</h1>
             <nav>
                 <section>
                     <ul>
                         <li><a href="#about" class="desktop-menu">About</a></li>
-                        <li><a href="#show_reel" class="desktop-menu">Show Reel</a></li>
+                        <!--<li><a href="#show_reel" class="desktop-menu">Show Reel</a></li>-->
                         <li><a href="#bio" class="desktop-menu">Bio</a></li>
                         <li><a href="#credits" class="desktop-menu">Credits</a></li>
                         <li><a href="#contact" class="desktop-menu">Contact</a></li>
@@ -70,14 +70,14 @@
             </nav>
       </div>
       
-      <div class="preloader"></div>
+      <!--<div class="preloader"></div>-->
       <ul data-orbit data-options="slide_number:false; navigation_arrows:false;">
           <li><img src="img/slider.jpg" class="hero"/></li>
     	  <li><img src="img/slider.jpg" class="hero"/></li>
 	      <li><img src="img/slider.jpg" class="hero"/></li>
       </ul>
       
-      <img src="img/watt-logo.png" alt="Watt Productions" class="logo"> 
+      <div class="logo"><img src="img/watt-logo.png" alt="Watt Productions"></div> 
     
     </div>
     
@@ -85,21 +85,27 @@
   
   </header>
   <!-- /Header -->
-  
+
   <div class="row">
     <div class="large-8 columns large-centered">
       	
         <article>
         <h1 id="about">About</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet semper diam, eu sollicitudin lectus ornare sed. Curabitur sagittis, metus vitae pharetra tristique, nibh erat ornare elit, non scelerisque purus odio sit amet ipsum. Suspendisse elementum lorem et orci commodo eget elementum augue vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse molestie mauris non tortor tincidunt dignissim. Integer faucibus sollicitudin egestas. In hac habitasse platea dictumst. Etiam congue nibh quis tellus bibendum posuere.</p> 
-        <p>Nam in massa sed tellus facilisis ultrices volutpat eget erat. Nullam feugiat laoreet augue, at consectetur leo imperdiet non. Curabitur orci nibh, viverra a commodo nec, laoreet quis arcu. Praesent vel velit et libero laoreet dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam iaculis risus ac nisi pellentesque at iaculis neque consequat. Nullam quis augue nisl. Quisque fermentum magna sit amet dui volutpat dignissim.</p>
-        </article>
+        <p><strong>Watt Pictures: Real Entertainment.</strong></p>
+        <p>Watt Pictures is an edgy, independent production company based in New York City. We create prime time content for major US broadcasters and international brands. We believe in the supremacy of story and the capacity of human character, and that’s why, for years, we we have turned ordinary life into extraordinary television. And whether you’re a client, an employee, on-screen talent, or a business partner, those working with Watt Pictures benefit from our passion, creativity, and personal attention. We love what we do. We care about it. We’re good at it... and we’re going to stay that way. </p>
+		<p><strong>Submissions Welcome</strong></p>
+		<p>If you have an idea for a television show, or you know of a unique character or family business, feel free to contact us at: casting@wattpictures.com </p>
+		<p>Representation: the Creative Artists Agency.</p>
+		<p><strong>The Executive Producer</strong></p>
+		<p>Since 2005, Jason Watt has created, directed, and produced a range of factual and lifestyle programming for networks ranging from HGTV to MTV, and everywhere in between. His experience includes nearly every aspect of television production. He is a sought-after show runner and directed who has launched new series for both emerging and established media outlets. He holds an MA in English Literature from Hollins University and an MFA in Creative Writing from the University of Illinois, where he was one of the founding editors of Ninth Letter Magazine.</p>
+		<p><em>We live for stories</em>.<br></p>
+		</article>
 
     </div>
   </div>
   
   
-  <div class="row">
+  <!--<div class="row">
     <div class="large-12 columns">
       	
         <h1 id="show_reel">Show Reel</h1>
@@ -107,7 +113,7 @@
         <p><span>Video Title, Video Credit, Date</span></p>
 
     </div>
-  </div>
+  </div>-->
   
   
   <div class="row">
@@ -246,7 +252,7 @@
   <div class="row">
   	<div class="large-2 columns large-centered">
     
-  `		<h1 id="contact">Contact</h1>
+  		<h1 id="contact">Contact</h1>
     	
         <p>123 Main Street<br>
         Brooklyn, NY 11221<br>
@@ -296,6 +302,13 @@
 		$.scrollTo(this.hash, this.hash);
 		e.preventDefault();
 	});
+	
+	$(document).ready(function() {
+	  setTimeout(function(){
+		  $('#menu').addClass('visible animated fadeInUp');
+	  },500)
+  	});
+  
   </script>
 </body>
 </html>
