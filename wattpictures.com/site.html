@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Watt Pictures</title>
 
   
@@ -17,76 +17,34 @@
   <script src="http://static.codestarconstellation.com/foundation-4.2.2/js/vendor/custom.modernizr.js"></script>
 
 </head>
-<body  class="animated fadeInUp">
+<body>
   
   <!-- Header -->	
   <header>
     
-  <!--<div class="row collapse">
-  	<div class="large-12 columns">
-    	
-        <nav class="top-bar show-for-small">
-          <ul class="title-area">
-            <li class="name">
-              <h1><a href="#">Watt Pictures</a></h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-          </ul>
-          
-          <section class="top-bar-section">
-            <ul class="left">
-              <li class="divider"></li>
-              <li><a href="#about">About</a></li>
-              <li class="divider"></li>
-              <li><a href="#show_reel">Show Reel</a></li>
-              <li class="divider"></li>
-              <li><a href="#bio">Bio</a></li>          
-              <li class="divider"></li>
-              <li><a href="#credits">Credits</a></li>
-              <li class="divider"></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </section>
-          </nav>
-          
-    </div>
-  </div>-->
   
-  <div class="row collapse full relative">
-    <div class="large-12 columns">
-      
-      <div class="menu-desktop" id="menu">
-      		<h1>WATT PICTURES<br>TELEVISION PRODUCTION</h1>
-            <nav>
-                <section>
-                    <ul>
-                        <li><a href="#about" class="desktop-menu">About</a></li>
-                        <!--<li><a href="#show_reel" class="desktop-menu">Show Reel</a></li>-->
-                        <li><a href="#bio" class="desktop-menu">Bio</a></li>
-                        <li><a href="#credits" class="desktop-menu">Credits</a></li>
-                        <li><a href="#contact" class="desktop-menu">Contact</a></li>
-                    </ul>
-                </section>
-            </nav>
-      </div>
-      
-      <!--<div class="preloader"></div>-->
-      <ul data-orbit data-options="slide_number:false; navigation_arrows:false; animation: 'fade'; ">
-          <li><img src="img/slider.jpg" class="hero"/></li>
-    	  <li><img src="img/slider.jpg" class="hero"/></li>
-	      <li><img src="img/slider.jpg" class="hero"/></li>
-      </ul>
-      
-      <div class="logo"><img src="img/watt-logo.png" alt="Watt Productions"></div> 
-    
-    </div>
-    
-  </div>
+  
   
   </header>
-  <!-- /Header -->
-
-  <div class="row">
+  <!-- /Header --> 
+  <nav class="menu-desktop" id="menu">
+    <h1>WATT PICTURES<br>TELEVISION PRODUCTION</h1>
+    <ul>
+        <li><a href="#about" class="desktop-menu">About</a></li>
+        <!--<li><a href="#show_reel" class="desktop-menu">Show Reel</a></li>-->
+        <li><a href="#bio" class="desktop-menu">Bio</a></li>
+        <li><a href="#credits" class="desktop-menu">Credits</a></li>
+        <li><a href="#contact" class="desktop-menu">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="intro" class="row collapse full relative">
+    <!-- <div class="large-12 columns">
+      <div class="logo"><img src="img/watt-logo.png" alt="Watt Productions"></div> 
+    </div> -->
+  </section>
+  
+  
+  <div class="row content">
     <div class="large-8 columns large-centered">
       	
       <article>
@@ -111,15 +69,25 @@
   </div>
   
   
-  <!--<div class="row">
-    <div class="large-12 columns">
+  <div class="row">
+    <div class="large-12 columns text-center">
       	
         <h1 id="show_reel">Show Reel</h1>
-		<img src="http://placehold.it/1000x450">
-        <p><span>Video Title, Video Credit, Date</span></p>
-
+        <div class="flex-video widescreen vimeo">
+		<!-- <img src="http://placehold.it/1000x450"> -->
+		<iframe src="//player.vimeo.com/video/81954673?badge=0&byline=0&portrait=0&title=0&color=FFFFFF" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+		
+		
+		<!-- <p>
+		  <a href="http://vimeo.com/81954673">WattPicturesCompanyReel</a> 
+		  from <a href="http://vimeo.com/wattpictures">Watt Pictures</a> 
+		  on <a href="https://vimeo.com">Vimeo</a>.
+		 </p>
+      
+        <p><span>Video Title, Video Credit, Date</span></p> -->
+      </div>
     </div>
-  </div>-->
+  </div>
   
   
   <div class="row">
@@ -309,17 +277,17 @@
 		e.preventDefault();
 	});
 	
-	$(document).ready(function() {
-	  setTimeout(function(){
-		  $('#menu').addClass('visible animated fadeInUp');
-
-	  },500)
-	   setTimeout(function(){
-      $('.logo').addClass('visible animated fadeInUp');
-
-    },250)
-	       
-  	});
+	// $(document).ready(function() {
+	  // setTimeout(function(){
+		  // $('#menu').addClass('visible animated fadeInUp');
+// 
+	  // },500)
+	   // setTimeout(function(){
+      // $('.logo').addClass('visible animated fadeInUp');
+// 
+    // },250)
+// 	       
+  	// });
   	
  
   
