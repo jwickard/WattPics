@@ -294,7 +294,10 @@ footer ul li a.facebook{
 	background:url(../img/ico-facebook.gif) top left no-repeat;
 }
 footer ul li a.twitter{
-	background:url(../img/ico-twitter.gif) top left no-repeat;
+  background:url(../img/ico-twitter.gif) top left no-repeat;
+}
+footer ul li a.tumblr{
+  background:url(../img/ico-tumblr.gif) top left no-repeat;
 }
 
 .visible {
