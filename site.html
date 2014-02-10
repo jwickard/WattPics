@@ -17,74 +17,54 @@
   <script src="js/custom.modernizr.js"></script>
 </head>
   <body>
+
     <header>
       <nav class="menu-desktop" id="menu">
-        <div class="row">
-          <div class="large-12 columns text-center">
-            <h1><img src="img/logo.jpg" alt="WATT PICTURES" width="201" height="26" /> <span>TELEVISION PRODUCTION</span></h1>
-            <ul>
-                <li><a href="#about" class="desktop-menu">About</a></li>
-                <li><a href="#bio" class="desktop-menu">Bio</a></li>
-                <li><a href="#contact" class="desktop-menu">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+        <h1>WATT PICTURES<br>TELEVISION PRODUCTION</h1>
+        <ul>
+            <li><a href="#about" class="desktop-menu">About</a></li>
+            <li><a href="#bio" class="desktop-menu">Bio</a></li>
+            <li><a href="#contact" class="desktop-menu">Contact</a></li>
+        </ul>
       </nav>
-      <!-- <section id="intro" class="row collapse full relative"></section> -->
+      <section id="intro" class="row collapse full relative"></section>
     </header>
 
-    <div class="first row" id="show_reel">
+    <div class="row">
       <div class="large-12 columns text-center">
-        <article>
-          <h2>Show Reel</h2>
+          <h1 id="show_reel">Show Reel</h1>
           <div class="flex-video widescreen vimeo">
           <iframe src="//player.vimeo.com/video/81954673?badge=0&amp;byline=0&amp;portrait=0&amp;title=0&amp;color=FFFFFF" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-        </article>
+        </div>
       </div>
     </div>
 
-    <div class="row content" id="about">
+    <div class="row content">
       <div class="large-8 columns large-centered">
         <article>
-          <h2>Watt Pictures: Real Entertainment.</h2>
+          <h1 id="about">Watt Pictures: Real Entertainment.</h1>
           <p>Watt Pictures is an edgy, independent production company based in New York City. We create prime time content for major US broadcasters and international brands. We believe in the supremacy of story and the capacity of human character, and that’s why, for years, we we have turned ordinary life into extraordinary television. And whether you’re a client, an employee, on-screen talent, or a business partner, those working with Watt Pictures benefit from supremacy of story, the capacity of character, and in the limitless possibilities of image and imagination. We love what we do. We care about it. We’re good at it. See for yourself, by watching our reel. </p>
-        </article>
-      </div>
-    </div>
-
-    <div class="row content" id="bio">
-      <div class="large-8 columns large-centered">
-        <article>
-          <h2>The Executive Producer</h2>
+          <h1 id="bio">The Executive Producer</h1>
           <p>Since 2005, Jason Watt has created, directed, 
             and produced a range of factual and lifestyle programming for networks ranging from HGTV to MTV, and everywhere in between. His experience includes nearly every aspect of television production. He is a sought-after show runner and director who has launched new projects for both emerging and established media outlets. He holds an MA in English Literature from Hollins University and an MFA in Creative Writing from the University of Illinois, where he was one of the founding editors of Ninth Letter Magazine.</p>
-        </article>
-      </div>
-    </div>
-
-    <div class="row content" id="submissions">
-      <div class="large-8 columns large-centered">
-        <article>
-          <h2>Submissions Welcome</h2>
-          <p>If you have an idea for a television show, or you know of a unique character or family business, feel free to contact us at: <a href="mailto:casting@wattpictures.com">casting@wattpictures.com</a>.</p>
+          <h1>Submissions Welcome</h1>
+          <p>If you have an idea for a television show, or you know of a unique character or family business, feel free to contact us at: casting@wattpictures.com </p>
           <p>Representation: Matt Horowitz, Creative Artists Agency.</p>
         </article>
       </div>
     </div>
 
-    <div class="row" id="contact">
+    <div class="row">
       <div class="large-8 columns large-centered">
-        <article>
-          <h2>Contact</h2>
-          <p class="centered"><a href="mailto:info@wattpictures.com">info@wattpictures.com</a></p>
-        </article>
+        <h1 id="contact">Contact</h1>
+        <p class="centered">info@wattpictures.com</p>
        </div>   
     </div>
 
     <footer>
       <div class="row">
         <div class="large-4 columns">
-          <h1>WATT PICTURES <span>TELEVISION PRODUCTION</span></h1>
+          <h1>WATT PICTURES<br>TELEVISION PRODUCTION</h1>
           <ul>
             <li><a href="#" class="instagram">Instagram</a></li>
               <li><a href="https://www.facebook.com/wattpictures" class="facebook">Facebook</a></li>
@@ -99,7 +79,7 @@
       </div>
     </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
     <script src="js/foundation.min.js"></script>
     <script src="js/jquery.scrollto.js"></script>
@@ -109,16 +89,7 @@
         $.scrollTo(this.hash, this.hash);
         e.preventDefault();
       });
-      $(function() {
-        var stickyHeaderTop = 90;
-        $(window).scroll(function(){
-          if($(window).scrollTop() > stickyHeaderTop ) {
-            $('body').addClass('sticky');
-          } else {
-            $('body').removeClass('sticky');
-          }
-        });
-      });
     </script>
+
   </body>
 </html>
