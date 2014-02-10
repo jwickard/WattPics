@@ -3,6 +3,10 @@ html {
   height: 100%;*/
 }
 
+a, a:hover {
+  color: #000;
+}
+
 /* FADES */
 .animated {
   -webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;
@@ -68,7 +72,6 @@ animation-duration: 5s;
   animation-name: fadeInUp;
 }
 
-
 .row.full {
   max-width:100%;
 }
@@ -81,36 +84,17 @@ animation-duration: 5s;
   width: 100%;
 }
 
-/*body {
-  opacity: 0;
-}*/
-
-
-.logo {
-  position: absolute;
-  bottom: 50px;
-  right:5%;
-  width:80px;
-  height:81px;
-  z-index:999;
-  display:none;
-  -webkit-filter: invert(1);
-}
-
 .top-bar .name h1 a {
-	width:100%; }
+  width:100%; }
 
 .menu-desktop {
-  position: fixed;
-  /*top:20px;
-  left:5%;*/
   width:auto;
   height:auto;
-  padding:20px;
+  padding:20px 0;
   z-index:999;
-  background-color: transparent;
-  opacity:0.8;
-
+  background-color: #fff;
+  overflow:hidden;
+  height: 200px;
 }
 
 .menu-desktop h1 {
@@ -125,12 +109,18 @@ animation-duration: 5s;
   border: none;
   display: block;
   padding: 0;
+  text-align: center;
+}
+
+.menu-desktop span {
+  display: block;
 }
 
 .menu-desktop ul {
+  text-align: center;
   margin:20px 0px 0px 0px;
   padding:20px 0px 0px 0px;
-  background:url(../img/bg-menu-desktop.gif) top left no-repeat;
+  background:url(../img/bg-menu-desktop.gif) top center no-repeat;
 }
 
 .menu-desktop ul li {
@@ -149,6 +139,52 @@ animation-duration: 5s;
 .menu-desktop ul li a:hover {
   text-decoration:underline;
 }
+
+.sticky .menu-desktop {
+  float: left;
+  height: 50px;
+  padding: 0;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  -webkit-box-shadow: 2px 0 2px 2px rgba(0,0,0,.2);
+  box-shadow: 2px 0 2px 2px rgba(0,0,0,.2);
+}
+
+.sticky .menu-desktop img {
+  float: left;
+  text-align: left;
+  padding-top: 13px;
+}
+
+.sticky .menu-desktop h1 {
+  float: left;
+  text-align: left;
+}
+
+.sticky .menu-desktop h1 span {
+  display: none;
+}
+
+.sticky .menu-desktop ul {
+  margin: 0;
+  padding: 0;
+  background: none;
+  float: right;
+}
+
+.sticky .menu-desktop ul li {
+  display: inline;
+  float: left;
+  line-height: 50px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.sticky .first {
+  padding-top:200px;
+}
+
 /*
 ol.orbit-bullets {
   display: table;
@@ -170,34 +206,59 @@ ol.orbit-bullets {
 body {
   background: transparent;
 }
-#intro {
-  width: 100%;
-  height: 800px;
-    background: transparent url('../img/slider.jpg') center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  
-  background-attachment: fixed;
-}
 
 @media screen and ( max-width: 490px) {
-  #intro { height: 380px; background-position-y: -120px;}
-  #intro {
-      position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
+
+  .menu-desktop {
+    float: left;
+    height: 50px;
+    padding: 0;
+    position: fixed;
+    z-index: 10;
     width: 100%;
-    height: 320px;
-    height: 125%; /* To compensate for mobile browser address bar space */
-    background: url('../img/slider.jpg') no-repeat; 
-    background-size: auto 320px;
+    -webkit-box-shadow: 2px 0 2px 2px rgba(0,0,0,.2);
+    box-shadow: 2px 0 2px 2px rgba(0,0,0,.2);
   }
-  
-  .content {
-    position: relative;
-    top: 320px;
-    background: white;
+
+  .sticky .menu-desktop img, .menu-desktop img {
+    float: none;
+    text-align: center;
+    padding-top: 13px;
+  }
+
+  .sticky .menu-desktop h1, .menu-desktop h1 {
+    float: none;
+    text-align: center;
+  }
+
+  .menu-desktop span {
+    display: none;
+  }
+
+  .menu-desktop ul {
+    position: absolute;
+    left: -99999px;
+  }
+
+  /* 
+  .menu-desktop ul {
+    margin: 0;
+    padding: 0;
+    background: none;
+    float: right;
+  }
+
+  .menu-desktop ul li {
+    display: inline;
+    float: left;
+    line-height: 50px;
+    margin-left: 10px;
+  }
+
+  */
+
+  .sticky .first, .first {
+    padding-top:20px;
   }
   
 }
@@ -205,10 +266,10 @@ body {
 article {
   text-align: center;
 }
-h1 {
+h2 {
   display: inline-block;
   padding: 0 20px;
-  margin: 30px auto;
+  margin: 70px auto 30px auto;
   text-align: center;
   font-family: 'GFS Didot', serif;
   font-size: 26px;
@@ -217,7 +278,7 @@ h1 {
   font-weight: 100;
 }
 @media screen and ( max-width: 490px) {
-  h1 {font-size: 1.3em;}
+  h2 {font-size: 1.3em;}
 }
 p {
   text-align:justify;
@@ -226,9 +287,9 @@ p {
 
 p span {
 
-	text-align:center;
-	display:block;
-	margin-top:10px;
+  text-align:center;
+  display:block;
+  margin-top:10px;
 }
 #credits, #contact {
   display: block;
@@ -238,20 +299,20 @@ p span {
   text-align: center;
 }
 .credits ul {
-	margin:0px;
-	padding:0px;
+  margin:0px;
+  padding:0px;
 }
 
 .credits ul li {
-	margin:0px 0px 0px 25px;
-	padding:0px;
-	font-size:11px;
+  margin:0px 0px 0px 25px;
+  padding:0px;
+  font-size:11px;
 }
 
 footer {
-	background:#EEEEEE;
-	border-top:1px solid #000;
-	padding:20px 0px 40px 0px;
+  background:#EEEEEE;
+  border-top:1px solid #000;
+  padding:20px 0px 40px 0px;
 }
 
 footer h1 {
@@ -264,34 +325,42 @@ footer h1 {
   width:auto;
   margin:0px;
   border:none;
+  padding: 0;
+  display: block;
+}
+
+footer h1 span {
+  display: block;
 }
 
 footer ul {
-	margin:20px 0px 0px 0px;
-	padding:0px;
+  margin:20px 0px 10px 0px;
+  padding:0px;
+  float: left;
+  clear: left;
 }
 
 footer ul li {
-	float:left;
-	width:30px;
-	height:25px;
-	display:block;
-	list-style-type:none;
-	margin:0px 10px 0px 0px;
+  float:left;
+  width:30px;
+  height:25px;
+  display:block;
+  list-style-type:none;
+  margin:0px 10px 0px 0px;
 }
 
 footer ul li a{
-	width:30px;
-	height:25px;
-	display:block;
-	text-indent:-99999px;
+  width:30px;
+  height:25px;
+  display:block;
+  text-indent:-99999px;
 }
 
 footer ul li a.instagram{
-	background:url(../img/ico-instagram.gif) top left no-repeat;
+  background:url(../img/ico-instagram.gif) top left no-repeat;
 }
 footer ul li a.facebook{
-	background:url(../img/ico-facebook.gif) top left no-repeat;
+  background:url(../img/ico-facebook.gif) top left no-repeat;
 }
 footer ul li a.twitter{
   background:url(../img/ico-twitter.gif) top left no-repeat;
@@ -301,7 +370,7 @@ footer ul li a.tumblr{
 }
 
 .visible {
-	display:block !important;
+  display:block !important;
 }
 
 /* ==============================
@@ -309,23 +378,7 @@ footer ul li a.tumblr{
    ============================== */
 @media only screen and (min-width: 47em) {
 
-.logo {
-  width: 157px;
-  height: 159px;
-  top: 350px;
-  left: 20px;
-  -webkit-filter: invert(1);
 
-}
-
-.menu-desktop {
-  top:40px;
-  padding:0px;
-  left:5%;
-  background-color:transparent;
-  opacity:1;
-  position:fixed;
-}
 
 }
 
